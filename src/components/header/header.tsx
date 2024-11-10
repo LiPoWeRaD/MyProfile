@@ -5,12 +5,16 @@ const Header = () => {
 
     return (
         <div className='flex flex-col container mx-auto'>
-            <h2 className='mb-10 text-green '>Hello</h2>
-            <h3 className='mb-10 text-2xl leading-[64px] md:text-[64px] text-white'>I'm Jonathan, UX/UI Designer and no-code Developer</h3>
-            <p className='text-grey text-base md:text-xl w-3/4 mb-40'>I craft elegant solutions to complex problems, and I gives me pleasure. I'm living in Berlin with my loving wife and cute daughter.</p>
+            <h2 className='mb-10 text-green '>Привет</h2>
+            <h3 className='mb-10 text-2xl leading-[64px] md:text-[64px] text-white'>Меня зовут Егор, я - Frontend Developer</h3>
+            <p className='text-grey text-base md:text-xl w-3/4 mb-40'>
+            Я создаю сайты с использованием React и TypeScript. 
+            При этом осваиваю новые технологии и инструменты. 
+            Мне нравится создавать удобные и красивые интерфейсы для пользователей.
+            </p>
             <ul className='flex gap-x-24'>
-                {Stat({ number: 1, text: 'Years Experience' })}
-                {Stat({ number: 5, text: 'Completed Project' })}
+                {Stat({ number: 1, text: 'Лет практики' })}
+                {Stat({ number: 5, text: 'Выполненных проектов' })}
             </ul>
         </div>
 

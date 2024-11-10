@@ -9,8 +9,8 @@ const Skills = () => {
 
     return (
         <div className=''>
-            <h2 className='mb-5 text-green'>Skills</h2>
-            <h3 className='mb-5 text-[40px] text-white'>My skills and knowledge</h3>
+            <h2 className='mb-5 text-green'>Скилы</h2>
+            <h3 className='mb-5 text-[40px] text-white'>Мои скилы</h3>
             <ul className="flex flex-wrap gap-x-[60px] gap-y-5">
                 {ListSkills([
                     { pathLogo: reactlogo }, 

@@ -23,7 +23,7 @@ export const FormContact = () => {
         phone: phoneRef.current?.value,
         message: messageRef.current?.value
       }, "k01tCnsvQn7LyxTJZ");
-      alert("email successfully sent check inbox");
+      alert("Сообщение отправлено");
     } catch (error) {
       console.log(error);
     } finally {
@@ -33,11 +33,11 @@ export const FormContact = () => {
 
   return (
     <form className='flex flex-col gap-y-8 ' onSubmit={handleSubmit}>
-      <InputForm id="name" name="name" Ref={nameRef} type="text" placeholder="Full name" fullName="Full name" />
+      <InputForm id="name" name="name" Ref={nameRef} type="text" placeholder="Полное имя" fullName="Полное имя" />
       <InputForm id="email" name="email" Ref={emailRef} type="email" placeholder="Email" fullName="Email" />
-      <InputForm id="phone" name="phone" Ref={phoneRef} type="tel" placeholder="Phone" fullName="Phone" />
-      <InputForm id="message" name="message" textarea Ref={messageRef} type="text" placeholder="Write a little brief about your project or scope of work." fullName="Message" />
-      <button className="py-8 px-28 text-white bg-transparent border border-grey rounded-[32px] max-w-[300px]" type="submit" disabled={loading}>Send</button>
+      <InputForm id="phone" name="phone" Ref={phoneRef} type="tel" placeholder="+7 (999) 999-99-99" fullName="Телефон" />
+      <InputForm id="message" name="message" textarea Ref={messageRef} type="text" placeholder="Напишите небольшую краткую информацию о вашем проекте или объеме работ." fullName="Сообщение" />
+      <button className="py-8 px-28 text-white bg-transparent border border-grey rounded-[32px] max-w-[300px]" type="submit" disabled={loading}>Отправить</button>
     </form>
   );
 
