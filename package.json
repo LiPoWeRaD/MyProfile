@@ -18,8 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "netlify dev",
+    "build": "mkdir -p dist && cp -R src/* dist/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.14",
+    "netlify-cli": "*"
   }
 }
