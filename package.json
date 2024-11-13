@@ -19,6 +19,7 @@
   },
   "scripts": {
     "start": "netlify dev",
+    "startnew": "react-scripts start",
     "build": "mkdir -p dist && cp -R src/* dist/",
     "buildnew": "react-scripts build",
     "test": "react-scripts test",
