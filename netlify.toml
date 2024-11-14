@@ -1,5 +1,5 @@
 [build]
-command = "npm run build"
-publish = "dist"
+command = "npm run buildnew"
+publish = "build"
 [dev]
 publish = "src"
