@@ -1,4 +1,3 @@
-import profile from '../../assets/profile.jpeg'
 import Stat from '../../ul/stat/stat'
 
 const Header = () => {
