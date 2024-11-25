@@ -37,7 +37,8 @@ export const FormContact = () => {
       <InputForm id="email" name="email" Ref={emailRef} type="email" placeholder="Email" fullName="Email" />
       <InputForm id="phone" name="phone" Ref={phoneRef} type="tel" placeholder="+7 (999) 999-99-99" fullName="Телефон" />
       <InputForm id="message" name="message" textarea Ref={messageRef} type="text" placeholder="Напишите небольшую краткую информацию о вашем проекте или объеме работ." fullName="Сообщение" />
-      <button className="py-8 px-28 text-white bg-transparent border border-grey rounded-[32px] max-w-[300px]" type="submit" disabled={loading}>Отправить</button>
+      <button className="py-8 px-28 text-white bg-transparent border border-grey rounded-[32px] max-w-[300px] hover:bg-grey hover:text-black 
+                         transition-colors duration-300 ease-in focus:outline-none focus:bg-grey focus:text-black active:bg-grey active:text-black" type="submit" disabled={loading}>Отправить</button>
     </form>
   );
 
