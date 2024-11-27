@@ -5,8 +5,8 @@ import git from '../../assets/logoProfilePage/git.svg'
 
 const CardProfile = () => {
     return (
-        <div className='flex flex-col '>
-            <img className='flex mt-16  w-[360px] h-[360px] rounded-[40px]' src={profile} alt="My profile" />
+        <div className='flex flex-col gap-y-10'>
+            <img className='flex mt-16 w-[360px] h-[400px] rounded-[40px] opacity-60' src={profile} alt="My profile" />
             <ul className='flex gap-x-10'>
                 {ListLink([
                     { pathLogo: vk, link: 'https://vk.com/lipowerad' },
